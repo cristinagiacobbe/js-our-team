@@ -50,6 +50,10 @@ const team = [
 
 console.log(team.length);
 
+for (let i = 0; i < team.length; i++) {
+    const member = team[i];
+    console.log(member);
+}
 
 
 
