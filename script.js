@@ -15,13 +15,42 @@
 //mark up to convert strings into card
 
 
-const team = {
-    name: ["Wayne Barnett", "Angela Caroll", "Walter Gordon", "Angela Lopez", "Scott Estrada", "Barbara Ramos"],
-    role: ["Founder & CEO", "Chief Editor", "Office Manager", "Social Media Manager", "Developer", "Graphic Designer"],
-    photo: ["wayne-barnett-founder-ceo.jpg", "angela-caroll-chief-editor.jpg", "walter-gordon-office-manager.jpg", "angela-lopez-social-media-manager.jpg", "scott-estrada-developer.jpg", "barbara-ramos-graphic-designer.jpg"],
+const team = [
+{
+    name: "Wayne Barnett",
+    role: "Founder & CEO",
+    photo: "wayne-barnett-founder-ceo.jpg"
+},
+{
+    name: "Angela Caroll",
+    role: "Chief Editor",
+    photo: "angela-caroll-chief-editor.jpg"
+},
+{
+    name:"Walter Gordon", 
+    role: "Office Manager", 
+    photo: "walter-gordon-office-manager.jpg"
+},
+{
+    name: "Angela Lopez", 
+    role: "Social Media Manager", 
+    photo: "angela-lopez-social-media-manager.jpg"
+},
+{
+    name: "Scott Estrada", 
+    role:  "Developer",
+    photo: "scott-estrada-developer.jpg"
+},
+{
+    name: "Barbara Ramos",
+    role: "Graphic Designer",
+    photo: "barbara-ramos-graphic-designer.jpg"
 }
+]
 
-console.log(team);
+console.log(team.length);
+
+
 
 
 
