@@ -48,37 +48,38 @@ const team = [
     }
 ]
 
-console.log(team.length);
+//console.log(team.length);
 
 for (let i = 0; i < team.length; i++) {
     const member = team[i];
-    console.log(member);
-    
+    //console.log(member);
+    const memberName = member.name
+    const memberRole = member.role
+    const memberPhoto = member.photo
+    MemberAppend(memberName)
+    MemberAppend(memberRole)
+    MemberAppend(memberPhoto)
+    Separator()
 }
 
-const member = team[0]
-console.log(member.role);
-
-
-const memberName = member.name
-const memberRole = member.role
-const memberPhoto = member.photo
-console.log(memberName);
+/* console.log(memberName);
 console.log(memberRole);
-console.log(memberPhoto);
+console.log(memberPhoto); */
 
 function MemberAppend(memberName) {
-const containerElement = document.querySelector(".container-card")
-const cardElement = document.createElement("div")
-cardElement.className = "card"
-cardElement.innerText = (memberName)
-containerElement.append(cardElement)    
+    const containerElement = document.querySelector(".container-card")
+    const cardElement = document.createElement("div")
+    cardElement.className = "card"
+    cardElement.innerText = (memberName)
+    containerElement.append(cardElement)
+}
+function Separator() {
+    const containerElement = document.querySelector(".container-card")
+const hrElement = document.createElement("hr")
+containerElement.append(hrElement)
 }
 
-MemberAppend(memberName)
-MemberAppend(memberRole)
-MemberAppend(memberPhoto)
- 
+
 
 
 
