@@ -19,32 +19,32 @@ const team = [
     {
         name: "Wayne Barnett",
         role: "Founder & CEO",
-        photo: "wayne-barnett-founder-ceo.jpg"
+        photo: "./img/WBarnett.jpg"
     },
     {
         name: "Angela Caroll",
         role: "Chief Editor",
-        photo: "angela-caroll-chief-editor.jpg"
+        photo: "./img/ACaroll.jpg"
     },
     {
         name: "Walter Gordon",
         role: "Office Manager",
-        photo: "walter-gordon-office-manager.jpg"
+        photo: "./img/WGordon.jpg"
     },
     {
         name: "Angela Lopez",
         role: "Social Media Manager",
-        photo: "angela-lopez-social-media-manager.jpg"
+        photo: "./img/ALopez.png"
     },
     {
         name: "Scott Estrada",
         role: "Developer",
-        photo: "scott-estrada-developer.jpg"
+        photo: "./img/SEstrada.jpg"
     },
     {
         name: "Barbara Ramos",
         role: "Graphic Designer",
-        photo: "barbara-ramos-graphic-designer.jpg"
+        photo: "./img/BRamos.png"
     }
 ]
 
@@ -58,7 +58,7 @@ for (let i = 0; i < team.length; i++) {
     const memberPhoto = member.photo
     MemberAppend(memberName)
     MemberAppend(memberRole)
-    MemberAppend(memberPhoto)
+    insertPhoto(memberPhoto)
     Separator()
 }
 
@@ -79,8 +79,12 @@ const hrElement = document.createElement("hr")
 containerElement.append(hrElement)
 }
 
-
-
+function insertPhoto(memberPhoto) {
+    const containerElement = document.querySelector(".container-card")
+const photoElement = document.createElement("img")
+photoElement.src = memberPhoto;
+containerElement.appendChild(photoElement);
+}
 
 
 
